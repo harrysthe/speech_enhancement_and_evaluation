@@ -20,7 +20,7 @@ noise_footprint_creation.py:
 
     >>> esnr_values = noise_footprint_creation.esnr_and_common_zero_areas("thirsty-med-3_manos_16kHz.wav", -7.0, 2, 2)
 
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 fix_wpa_bug.py:
 
 (1) Module that is being used for extending the length of a signal so as the signal to have an appropriate length for it's 22-bands Wavelet Packet Analysis (WPA).
@@ -42,7 +42,7 @@ fix_wpa_bug.py:
     >>> extended_noisy_signal_array = fix_wpa_bug.signal_adaptation_for_22_bands_wpa(noisy_signal_array, 6)
     >>> print(extended_noisy_signal_array.shape) -> (42432,)
 
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 wdwf.py:
 
 (1) Module that is being used for creating the WAV file of the denoised signal given the WAV files of the noisy signal and noise footprint.
@@ -66,7 +66,7 @@ wdwf.py:
 
     >>> denoised_signal = wdwf.denoising("sp23_car_sn05_16kHz.wav", "sp23_car_sn05_16kHz-noise_footprint-2.wav", 4, False, False, 6, 2.0, 2.0, 1.0, 0.22, 0.9)
 
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 speech_intelligibility_metrics.py:
 
 (1) Module that is being used for computing some speech intelligibility metrics (MSC, CSII, CSII-high, CSII-mid, CSII-low, I3) given the WAV files of the clean and denoised signals.
